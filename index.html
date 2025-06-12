@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+
+    <section class="contacts">
+        <div class="eco__container">
+            <div class="contacts__wrapper">
+                <div class="contacts__header">
+                    <h1 class="section__title">Контакты</h1>
+                    <div class="section__description">Научно-производственного центра «Экобиосфера»</div>
+                </div>
+
+                <div class="contacts__form">
+                    <div class="contacts__form__header">
+                        <p class="contacts__form__title">Приглашаем к сотрудничеству –</p>
+                        <p class="contacts__form__subtitle">Дистрибьюторов, заинтересованных в расширении на всей территории РФ</p>
+                    </div>
+
+                    <div class="contacts__form__content form__container">
+                        <e class="error__text">Заполните все поля</e>
+                        <form enctype="multipart/form-data" method="post" onsubmit="submitForm(event)" action="mail.php" class="contacts__form__inputs">
+                            <label for="name">
+                                <span>Введите название организации:</span>
+                                <input type="text" name="name" id="name" class="contacts__input" placeholder="ООО «Пример»">
+                            </label>
+                            <label for="phone">
+                                <span>Введите номер телефона:</span>
+                                <input type="tel" name="phone" id="phone" class="contacts__input" placeholder="+7 (___) ___ - __ - __">
+                            </label>
+                            <button type="submit" class="contacts__submit">Связаться с менеджером</button>
+                        </form>
+                        <div class="contacts__form__docs">
+                            <div class="checkbox__item">
+                                <input type="checkbox" class="checkbox__input" id="personal" name="personal" value="personal">
+                                <label for="personal" class="checkbox__label">Я согласен(-а) на <a href="#">обработку персональных данных</a></label>
+                            </div>
+                            <div class="checkbox__item">
+                                <input type="checkbox" class="checkbox__input" id="politics" name="politics" value="politics">
+                                <label for="politics" class="checkbox__label">Я ознакомлен(-а) с <a href="#">политикой конфиденциальности</a></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="maps">
+        <div class="eco__container">
+            <div class="maps__wrapper">
+                <div class="map__item">
+                    <div class="map__item__info">
+                        <h3 class="map__item__title">Производство Жиздра</h3>
+                        <div class="map__info">
+                            <div class="map__info__item">
+                                <p class="map__info__item__title">
+                                    <span>Адрес</span>
+                                </p>
+                                <p class="map__info__item__value">Калужская область, г. Жиздра, ул. 2-я Привокзальная, д. 30А</p>
+                            </div>
+                            <div class="map__info__item">
+                                <p class="map__info__item__title">
+                                    <span>Координаты</span>
+                                </p>
+                                <p class="map__info__item__value">53.734496, 34.740790</p>
+                            </div>
+                            <div class="map__info__item">
+                                <p class="map__info__item__title hours">
+                                    <span>Часы работы</span>
+                                </p>
+                                <p class="map__info__item__value">с 8:00 до 17:00</p>
+                            </div>
+                            <div class="map__info__item">
+                                <p class="map__info__item__title">
+                                    <span>Телефон</span>
+                                </p>
+                                <a href="tel:+74951045400" class="map__info__item__value">+7 (495) 104-54-00</a>
+                            </div>
+                            <div class="map__info__item">
+                                <p class="map__info__item__title mail">
+                                    <span>Эл. почта</span>
+                                </p>
+                                <a href="mailto:info@ecobio.pro" class="map__info__item__value">info@ecobio.pro</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map__container" id="map__production"></div>
+                </div>
+
+                <div class="map__item">
+                    <div class="map__item__info">
+                        <h3 class="map__item__title">Офис Москва</h3>
+                        <div class="map__info">
+                            <div class="map__info__item">
+                                <p class="map__info__item__title">
+                                    <span>Адрес</span>
+                                </p>
+                                <p class="map__info__item__value">Москва, ул. 2-я Магистральная, д 8А, БЦ Олимп</p>
+                            </div>
+                            <div class="map__info__item">
+                                <p class="map__info__item__title hours">
+                                    <span>Часы работы</span>
+                                </p>
+                                <p class="map__info__item__value">с 8:00 до 18:00</p>
+                            </div>
+                            <div class="map__info__item">
+                                <p class="map__info__item__title">
+                                    <span>Телефон</span>
+                                </p>
+                                <a href="tel:+74951045400" class="map__info__item__value">+7 (495) 104-54-00</a>
+                            </div>
+                            <div class="map__info__item">
+                                <p class="map__info__item__title mail">
+                                    <span>Эл. почта</span>
+                                </p>
+                                <a href="mailto:info@ecobio.pro" class="map__info__item__value">info@ecobio.pro</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map__container" id="map__office"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=0fe82a33-1e6e-4e85-8627-3e73d77faf16" type="text/javascript"></script>
+    <script src="js/common.js"></script>
+    <script src="js/map.js"></script>
+
+    <script>
+		async function submitForm(event) {
+			event.preventDefault(); // отключаем перезагрузку/перенаправление страницы
+			if (event.target.querySelector('input[name="name"]').value == '' || event.target.querySelector('input[name="phone"]').value == '') {
+				event.target.closest('.form__container').querySelector('.error__text').classList.add('visible')
+				event.target.querySelector('input[name="name"]').classList.add('error')
+				event.target.querySelector('input[name="phone"]').classList.add('error')
+			} else {
+				event.target.closest('.form__container').querySelector('.error__text').classList.remove('visible')
+				event.target.querySelector('input[name="name"]').classList.remove('error')
+				event.target.querySelector('input[name="phone"]').classList.remove('error')
+
+				// try {
+				// 	// Формируем запрос
+				// 	const response = await fetch(event.target.action, {
+				// 		method: 'POST',
+				// 		body: new FormData(event.target)
+				// 	});
+				// 	// проверяем, что ответ есть
+				// 	if (!response.ok) throw (`Ошибка при обращении к серверу: ${response.status}`);
+				// 	// проверяем, что ответ действительно JSON
+				// 	const contentType = response.headers.get('content-type');
+				// 	console.log(contentType)
+				// 	console.log(contentType.includes('application/json'))
+				// 	if (!contentType || !contentType.includes('application/json')) {
+				// 		throw ('Ошибка обработки. Ответ не JSON');
+				// 	}
+				// 	// обрабатываем запрос
+				// 	const json = await response.json();
+				// 	if (json.result === "success") {
+				// 		// в случае успеха
+				// 		event.target.closest('.form__container').querySelector('.sended').classList.add('active')
+				// 		event.target.reset()
+				// 		setTimeout(() => {
+				// 			event.target.closest('.form__container').querySelector('.sended').classList.remove('active')
+
+				// 			if (event.target.closest('.modal') != null) {
+				// 				event.target.closest('.modal').classList.remove('active')
+				// 				document.querySelector('body').classList.remove('hidden')
+				// 			}
+				// 		}, 4000)
+				// 	} else { 
+				// 		// в случае ошибки
+				// 		console.log(json);
+				// 		throw (json.info);
+				// 	}
+				// } catch (error) { // обработка ошибки
+				// 	alert(error);
+				// }
+			}
+		
+		}
+	</script>
+</body>
+</html>

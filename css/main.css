@@ -120,7 +120,7 @@ section.contacts {
     border-radius: 40px;
     background: url(../img/contacts-bg.jpg) bottom no-repeat;
     background-size: 100%;
-    top: 52px;
+    top: 0;
 }
 
 .contacts__form {
@@ -311,10 +311,6 @@ input.contacts__submit:hover {
 
 label.checkbox__label {
     cursor: pointer;
-}
-
-.checkbox__input {
-    margin: 0;
 }
 
 .maps__wrapper {
